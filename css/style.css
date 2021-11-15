@@ -20,3 +20,10 @@ h1 {
     font-family: Arial;
     text-transform: lowercase;
   }
+  input{
+      margin: 15px;
+  }
+  img{
+      width: 200px;
+      height: 200px;
+  }

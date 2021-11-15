@@ -11,12 +11,31 @@
 </head>
 <body>
     <div id="app">
-        <h1>{{ message }}</h1>
-        <h2>{{ mensaje1 }}</h2>
+
+        <h1>{{nombre}}</h1>
+        <h1>cantidad de clicks: {{clicks}}</h1>
+        <h1>potencia: {{potenciar}}</h1>
+
+        <button @click="sumar()">+</button>
+        <button @click="restar()">-</button>
+        <button @click="reiniciar()">reiniciar</button>
+
+        <h1>Framework: {{ message }}</h1>
+        <h2>{{ mensaje1.split('').reverse().join('') }}</h2>
         <h3>{{ mensaje2 }}</h3>
         <p>{{valorInput}}</p>
-        <input type="text" v-model="valorInput">
-        <img v-bind:src="valor1" alt="">
+        <p>{{imprimirenconsola()}}</p>
+        <p>{{duplicar}}</p>
+        <input type="text" v-model="valorInput"><br>
+        <input type="text" v-model="mensaje"><br>
+        <img v-bind:src="valorfinal" v-bind:alt="imagen">
+        <button @click="mostrarIamgen()">mostrar imagen</button>
+        
+        <div v-html="html"></div>
+        <button @click="alert()">mostrar mensaje</button>
+        <button @click="mostrarmensaje2(mensaje)">mostrar mensaje 2</button>
+        
+
         
 
       </div>
